@@ -26,7 +26,7 @@ const parsedInput = JSON.parse(localStorage.getItem(localStorageKey));
 emailText.value = parsedInput.email;
 messageText.value = parsedInput.message;
 
-form.addEventListener("submit", (event) => {
+mainForm.addEventListener("submit", (event) => {
   event.preventDefault();
   localStorage.removeItem(localStorageKey);
   let newEmailMessage = { email: "", message: "" };
