@@ -32,7 +32,7 @@ form.addEventListener("submit", (event) => {
   let newEmailMessage = { email: "", message: "" };
   newEmailMessage.email = emailText.value;
   newEmailMessage.message = messageText.value;
-  form.reset();
+  mainForm.reset();
 });
 
 
